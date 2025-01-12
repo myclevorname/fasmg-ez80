@@ -5,9 +5,9 @@ format ti executable 'HELLO'
 
 	or	a, a
 	sbc	hl, hl
-	ld	(curRow), hl
+	ld	(ti.curRow), hl
 	ld	hl, hello
-	call	_PutS
-	jp	_NewLine
+	call	ti.PutS
+	jp	ti.NewLine
 
 hello db "Hello", 0
